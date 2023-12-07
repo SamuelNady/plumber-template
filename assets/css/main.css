@@ -68,6 +68,10 @@ header {
     width: 100%;
     z-index: 9999;
     color: white;
+    transition: 0.5s;
+}
+
+.dark-bg {
     background-color: rgb(0, 0, 0, 0.7);
 }
 

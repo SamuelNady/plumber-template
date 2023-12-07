@@ -1,3 +1,4 @@
+const header = document.querySelector("header");
 const menuToggler = document.querySelector("header .toggle-menu");
 const menu = document.querySelector("header .container nav");
 const menuOverlay = document.querySelector("header .container .overlay");
@@ -47,5 +48,14 @@ window.onscroll = () => {
                 }
             });
         });
+    }
+
+
+    // header functionality
+
+    if (window.scrollY >= 50) {
+        header.classList.add('dark-bg');
+    }else {
+        header.classList.remove('dark-bg');
     }
 }
