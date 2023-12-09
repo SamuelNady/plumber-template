@@ -20,18 +20,19 @@ navElements.forEach(function(e) {
     });
 });
 
+
 // status functinoality
 
-let c = false;
+let in_view = false;
 window.onscroll = () => {
     let section = document.querySelector('.status').getBoundingClientRect().top;
     let view = section < window.innerHeight;
     if (!view) {
-        c = false;
+        in_view = false;
     }
 
-    if (!c && view) {
-        c = true;
+    if (!in_view && view) {
+        in_view = true;
         // status
         let status = [2536, 6784, 1059, 12239];
         status.forEach(function (e, index) {
@@ -39,8 +40,10 @@ window.onscroll = () => {
             let int = setInterval(function () {
                 if (e > 10000) {
                     i += 40;
-                }else {
+                }else if (e > 5000){
                     i += 20;
+                }else {
+                    i += 10;
                 }
                 document.querySelector(`.status .container .item:nth-child(${index+1}) span`).innerHTML = i;
                 if (i >= e) {
@@ -51,7 +54,7 @@ window.onscroll = () => {
     }
 
 
-    // header functionality
+    // header background changeing functionality
 
     if (window.scrollY >= 50) {
         header.classList.add('dark-bg');
