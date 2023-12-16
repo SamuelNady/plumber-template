@@ -18,13 +18,13 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#features">features</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#home" aria-label="home button">home</a></li>
+                    <li><a href="#services" aria-label="services section button">services</a></li>
+                    <li><a href="#features" aria-label="features section button">features</a></li>
+                    <li><a href="#contact" aria-label="contact section button">contact</a></li>
                 </ul>
             </nav>
-            <button class="toggle-menu">
+            <button class="toggle-menu" aria-label="open the menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="overlay">
@@ -198,7 +198,7 @@
     <section class="contact" id="contact" aria-label="contact us">
         <div class="container">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.661466517808!2d31.251068250313597!3d29.960414729404235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847bc875403c5%3A0x66aeabf6a7306995!2sItsharks!5e0!3m2!1sen!2seg!4v1652204943649!5m2!1sen!2seg" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe aria-label="our location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.661466517808!2d31.251068250313597!3d29.960414729404235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847bc875403c5%3A0x66aeabf6a7306995!2sItsharks!5e0!3m2!1sen!2seg!4v1652204943649!5m2!1sen!2seg" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form>
                 <input type="text" placeholder="Enter your name">
@@ -208,6 +208,7 @@
             </form>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="about">
@@ -239,21 +240,22 @@
                 <span class="heading">
                     Follow Us
                 </span>
-                <a href="#">
+                <a href="#" aria-label="twitter button">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="facebook button">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="linkedin button">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="github button">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </div>
     </footer>
+
     <script src="assets/vendors/ScrollReavel/ScrollReavel.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
